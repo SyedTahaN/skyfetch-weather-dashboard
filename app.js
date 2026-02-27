@@ -1,5 +1,5 @@
 // Your OpenWeatherMap API Key
-const API_KEY = e74307142fc1720d1b427f20b8d34a83;
+const API_KEY = "e74307142fc1720d1b427f20b8d34a83";
 const API_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 // Get references to HTML elements
