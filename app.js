@@ -12,8 +12,9 @@ const weatherDisplay = document.getElementById('weather-display');
 // ===============================
 function showLoading() {
     const loadingHTML = `
-        <div class="loading">
-            ⏳ Loading weather data...
+        <div class="loading-container">
+            <div class="spinner"></div>
+            <p class="loading">Fetching weather data...</p>
         </div>
     `;
     weatherDisplay.innerHTML = loadingHTML;
@@ -24,8 +25,8 @@ function showLoading() {
 // ===============================
 function showError(message) {
     const errorHTML = `
-        <div style="color: #ff4d4d; font-weight: 500;">
-            ❌ ${message}
+        <div class="error-message">
+            ⚠️ ${message}
         </div>
     `;
     weatherDisplay.innerHTML = errorHTML;
